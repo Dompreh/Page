@@ -1,0 +1,133 @@
+.page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.page .leftside{
+    height: 100%;
+    flex: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page .rightside{
+    height: 100%;
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-display{
+    margin: auto;
+    padding:1rem 5% ;
+    width: 80%;
+}
+.page-display > label{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #444;
+    text-align: center;
+}
+.page-display > h4{
+    font-size: 0.7rem;
+    color: #F5811F;
+    padding: 8px;
+    
+}
+.page-display > h3{
+    font-size: 0.6rem;
+     padding: 8px;
+     padding-bottom: 13px;
+}
+.page-display > p{
+color: gray;
+font-size: 0.5rem;
+margin-left: 7px;
+}
+.page-entry{
+    border: none;
+    border-bottom: 1px solid lightgray ;
+    outline: none;
+    height: 15px;
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: #444;
+    width: 80%;
+}
+.page-entry:hover{
+    outline: none;
+}
+.pageLimit {
+    font-size: .4rem !important;
+    font-weight: 400;
+    margin-bottom: 10px !important;
+}
+.pageLimit > span{
+    color: green;
+    font-size: .5rem;
+    font-weight: 400;
+}
+
+
+.wrapper{
+    display: grid ;
+    place-content: center;
+    height: 70vh;
+    padding: 0 20px;   
+}
+.container{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.btn{
+    width: 40px;
+    height: 40px;
+    display: grid;
+    padding: 10px;
+    place-content: center;
+    text-align: center;
+    border: 1px solid #F6821F;
+    background:  white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 50%;
+    color: black;
+    position: relative;
+}
+.page-arrow{
+    cursor: pointer;
+    font-size: .8rem !important;
+    color: lightgreen;
+}
+
+.btn:hover{
+opacity: 0.8;
+}
+.left_arrow{
+    border: none;
+    color: #F5811F;
+    font-weight: 600;
+}
+
+.pagebtn{
+    color: #F6821F;
+    background: white;
+    border: none;
+    margin-top: .6rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition:  all 0.7s ease-in-out;
+    cursor: pointer;
+}
+.pagebtn:hover{
+    transform: scale(0.96);
+}
